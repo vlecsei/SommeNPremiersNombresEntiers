@@ -20,11 +20,13 @@ public class Principale {
 	
 	    JOptionPane.showMessageDialog(null, nbreN.toString());
 	    
-	    while (i <= nbreN.geteNbreSaisi()) {
+	    do  {
 		somme = somme + i;
 		i++;
-	    }JOptionPane.showMessageDialog(null, "La somme des entiers de 0 à "+nbreN.geteNbreSaisi()+" est de "+somme);
-	
+	    }while (i <= nbreN.geteNbreSaisi());
+	    
+	    JOptionPane.showMessageDialog(null, "Le résultat avec do {...}while() est : "+somme, "Résultat avec répéter", JOptionPane.INFORMATION_MESSAGE);
+		
 	
 	
     }
