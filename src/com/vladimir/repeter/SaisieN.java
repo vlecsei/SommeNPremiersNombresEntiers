@@ -1,4 +1,4 @@
-package com.vladimir.tant_que;
+package com.vladimir.repeter;
 
 public class SaisieN {
     //Class permettant la saisie du nombre entier et l'appliquer en valeur de eNbreSaisi
@@ -28,15 +28,3 @@ public class SaisieN {
    
 }   
     
-    
-
-    
-    
-
-
-    
-    
-    
-    
-
-

@@ -1,6 +1,8 @@
-package com.vladimir.tant_que;
+package com.vladimir.repeter;
 
 import javax.swing.JOptionPane;
+
+import com.vladimir.tant_que.SaisieN;
 
 public class Principale {
     
@@ -12,9 +14,7 @@ public class Principale {
     public static void main(String[] args) {
 	
 	
-	    // Pour ma variable nbreN je demande à l'utilisateur de me rentrer une valeur que j'attibue à la variable eNbreSaisi de ma class SaisieN
-	
-	
+	    
 	    nbreN.seteNbreSaisi(Integer.parseInt(JOptionPane.showInputDialog(null, "Nombre entier à saisir", "Nombre entier", JOptionPane.QUESTION_MESSAGE)));
 	
 	
@@ -23,7 +23,7 @@ public class Principale {
 	    while (i <= nbreN.geteNbreSaisi()) {
 		somme = somme + i;
 		i++;
-	    }JOptionPane.showMessageDialog(null, "Le résultat avec while() {...} est : "+somme, "Résultat avec tant que", JOptionPane.INFORMATION_MESSAGE);
+	    }JOptionPane.showMessageDialog(null, "La somme des entiers de 0 à "+nbreN.geteNbreSaisi()+" est de "+somme);
 	
 	
 	
